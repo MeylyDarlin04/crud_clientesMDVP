@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viemport" content="width=device-width, initial-scale=1.0">
+        <title> Eliminar clientes </title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'clientes/style.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Eliminar Cliente</h1>
+            <h2>¿Seguro de eliminar este cliente? {{cliente.nombre}} {{cliente.apellido}}</h2> 
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit"> Confirmar </button>
+                <a class="btn" href="{% url 'cliente_list' %}">Cancelar</a>
+            </form>
+
+        </div>
+    </body>
+
+</html>
