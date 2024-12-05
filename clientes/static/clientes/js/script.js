@@ -42,11 +42,11 @@ document.querySelectorAll('.navbar a[href^="#"]').forEach(function(enlace){
 //Cambiar la imagen de fondo cada n segundo
 
 const imagenes =[
-    'img/1deporte.jpg',
-    'img/deporte.jpg',
-    'img/deportes.jpg',
-    'img/futbol5.jpg',
-    'img/futbol2.jpg'
+    'clientes/img/1deporte.jpg',
+    'clientes/static/clientes/img/deporte.jpg',
+    'static/clientes/img/deportes.jpg',
+    '/static/clientes/img/futbol5.jpg',
+    '/clientes/static/clientes/img/futbol2.jpg'
 ];
 const homeSection = document.querySelector('.home');
 const intervalo = 5000; //5000 ms =n5 s
